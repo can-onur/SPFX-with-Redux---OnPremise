@@ -12,6 +12,10 @@ Requires Gulp globally installed:
 npm install --global gulp
 ```
 
+You should use nodejs 8.17.0 to build.
+
+In case of any problem you can get in touch with me.
+
 ## Building the code
 
 Download & install all dependencies, build, bundle & package the project
