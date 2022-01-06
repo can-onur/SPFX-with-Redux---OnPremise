@@ -17,7 +17,8 @@
     "officeFabricIconFontName": "Group",
     "properties": {
       "title": "User Management",
-      "description": "You can manage users by using this webpart"
+      "description": "You can manage users by using this webpart",
+      "endPoint":""
     }
   }]
 }

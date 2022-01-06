@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
+import { Provider, ProviderProps } from 'react-redux';
 
 import {
   BaseClientSideWebPart,
@@ -11,16 +12,19 @@ import * as strings from 'UserManagementWebPartStrings';
 import {
   loadTheme,
 } from 'office-ui-fabric-react/lib/Styling';
+import { Main } from './components/main';
 import { IUserManagementWebPartProps } from './IUserManagementWebPartProps';
-import Main from './components/main';
 
 export default class UserManagementWebPart extends BaseClientSideWebPart<IUserManagementWebPartProps> {
+  // private store = configureStore();
 
   constructor() {
     super();
   }
 
   public render(): void {
+    if (this.renderedOnce) { return; }
+
     this.loadTheme();
     
     const webpart: React.ReactElement<IUserManagementWebPartProps> = React.createElement(
@@ -29,8 +33,16 @@ export default class UserManagementWebPart extends BaseClientSideWebPart<IUserMa
         endPoint: this.properties.endPoint,
         title: this.properties.title,
         description: this.properties.description,
-      }
+      },
     );
+
+    // const provider: React.ReactElement<ProviderProps> = React.createElement(
+    //   Provider,
+    //   {
+    //     store: this.store,
+    //     children: webpart
+    //   },
+    // );
 
     ReactDom.render(webpart, this.domElement);
   }
@@ -114,3 +126,4 @@ export default class UserManagementWebPart extends BaseClientSideWebPart<IUserMa
     });
   };
 }
+

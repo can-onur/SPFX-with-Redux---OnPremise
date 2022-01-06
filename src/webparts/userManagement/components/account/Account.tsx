@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Pivot, PivotItem } from 'office-ui-fabric-react';
 
 import { Create } from './create';
@@ -11,7 +11,6 @@ export interface IAccountProps {
 }
 
 export class Account extends React.Component<IAccountProps, IAccountState> {
-
   constructor() {
     super();
     this.state = {
