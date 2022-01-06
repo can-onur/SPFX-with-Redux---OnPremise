@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "6e1cb3de-49b1-448a-bffe-23863432d3e9",
+  "alias": "UserWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+ "requiresCustomScript": false,
+
+  "preconfiguredEntries": [{  
+    "groupId":  "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "User" },
+    "title": { "default": "User Management" },
+    "description": { "default": "Users can be managed by this web part" },
+    "officeFabricIconFontName": "Group",
+    "properties": {
+      "title": "User Management",
+      "description": "You can manage users by using this webpart"
+    }
+  }]
+}

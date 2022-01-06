@@ -1,0 +1,25 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+$defaultPadding:10px;
+
+.create {
+  .container {
+    max-width: 50%;
+    position: relative;
+    display: block;
+    padding: $defaultPadding;
+
+    .pullright {
+      float: right;
+    }
+  }
+
+  .clearfix,
+  .container {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}

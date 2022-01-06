@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.11.0",
+    "libraryName": "eld",
+    "libraryId": "9579135c-6c1d-4358-9181-79993d70a583",
+    "environment": "onprem19",
+    "packageManager": "npm",
+    "framework": "react",
+    "isCreatingSolution": true,
+    "componentType": "webpart"
+  }
+}
